@@ -6,7 +6,7 @@ import { CyberIcon } from './ui/cyber-elements';
 
 interface Skill {
   name: string;
-  level: number;
+  // level: number;
   category: 'offensive' | 'defensive' | 'development' | 'analysis';
   description: string;
   icon: 'shield' | 'lock' | 'terminal' | 'server' | 'database' | 'code' | 'key';
@@ -15,42 +15,42 @@ interface Skill {
 const skills: Skill[] = [
   {
     name: 'Network Security',
-    level: 90,
+    // level: 90,
     category: 'defensive',
     description: 'Securing network infrastructure and protecting against cyber threats',
     icon: 'shield'
   },
   {
     name: 'Python',
-    level: 85,
+    // level: 85,
     category: 'development',
     description: 'Building security tools and automation scripts',
     icon: 'code'
   },
   {
     name: 'JavaScript',
-    level: 80,
+    // level: 80,
     category: 'development',
     description: 'Web application security and development',
     icon: 'code'
   },
   {
     name: 'Cryptography',
-    level: 85,
+    // level: 85,
     category: 'defensive',
     description: 'Implementing secure encryption and data protection',
     icon: 'key'
   },
   {
     name: 'ReactJS',
-    level: 80,
+    // level: 80,
     category: 'development',
     description: 'Building secure and responsive web applications',
     icon: 'code'
   },
   {
     name: 'Swift',
-    level: 75,
+    // level: 75,
     category: 'development',
     description: 'iOS application security and development',
     icon: 'code'
@@ -93,11 +93,10 @@ export default function Skills() {
               command="cat skills.json | jq"
               output={`{
   "name": "Cybersecurity Professional",
-  "specialization": "Network Security & Penetration Testing",
+  "specialization": "Network Security & Web Security",
   "skills": {
-    "languages": ["Python", "C++", "Java", "SQL", "Bash"],
-    "security_tools": ["Metasploit", "Wireshark", "Nmap", "Burp Suite", "Kali Linux"],
-    "methodologies": ["OWASP", "NIST", "MITRE ATT&CK", "PTES"]
+    "languages": ["Python", "C++", "JavaScript", "SQL", "Bash","Swift"],
+    "security_tools": ["Wireshark", "Nmap", "Burp Suite", "Kali Linux"],
   },
   "certifications": ["Security+", "Network+", "Ethical Hacker"]
 }`}
@@ -180,7 +179,7 @@ function SkillCard({ skill }: SkillCardProps) {
         <div className="w-full h-2 bg-cyber-darker rounded-full overflow-hidden neumorphic-inset">
           <motion.div
             initial={{ width: 0 }}
-            whileInView={{ width: `${skill.level}%` }}
+            // whileInView={{ width: `${skill.level}%` }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.2 }}
             className="h-full rounded-full"
@@ -193,7 +192,7 @@ function SkillCard({ skill }: SkillCardProps) {
         
         <div className="mt-2 flex justify-between text-xs">
           <span className="text-gray-500">Beginner</span>
-          <span className="text-white font-mono">{skill.level}%</span>
+          {/* <span className="text-white font-mono">{skill.level}%</span> */}
           <span className="text-gray-500">Expert</span>
         </div>
       </NeumorphicBox>

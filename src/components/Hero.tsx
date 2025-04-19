@@ -24,7 +24,7 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <h4 className="text-cyber-neon-green font-mono mb-2">Hello World_</h4>
+            <h4 className="text-cyber-neon-green font-mono mb-2">Shreyash Gajbhiye_</h4>
             <NeumorphicText variant="h1" className="text-shadow-neon" glowing>
               Cybersecurity 
               <br />
@@ -34,13 +34,9 @@ export default function Hero() {
             <div className="h-12 my-4">
               <TypeAnimation
                 sequence={[
-                  'Ethical Hacker',
+                  'Network Security ',
                   1000,
-                  'Pentester',
-                  1000,
-                  'Network Security Specialist',
-                  1000,
-                  'Security Researcher',
+                  'CyberSecurity',
                   1000,
                   () => setHasTyped(true)
                 ]}
@@ -58,7 +54,7 @@ export default function Hero() {
               transition={{ delay: 0.5 }}
             >
               Securing digital realms and hunting vulnerabilities. Passionate about network security, 
-              penetration testing, and building defensive systems against ever-evolving cyber threats.
+              and building defensive systems against ever-evolving cyber threats.
             </motion.p>
             
             <motion.div 
@@ -106,18 +102,19 @@ export default function Hero() {
 > Access granted to CyberProfile v1.0
 
 SKILLS:
-- Python Programming    [██████████] 100%
+- Python Programming    [███████░░░]  70%
 - Network Security      [████████░░]  80%
-- Vulnerability Testing [███████░░░]  70%
-- Penetration Testing   [█████████░]  90%
-- Security Analysis     [████████░░]  80%
+- JavaScript            [███████░░░]  70%
+- Swift                 [█████████░]  90%
+- Cryptography          [████████░░]  80%
 
 CERTIFICATIONS:
-- CompTIA Security+
-- Ethical Hacking Fundamentals
-- Network Security Specialist
+-  Pre Security -> TryHackMe
+-  Foundation of Cybersecurity -> Coursera
+-  ISC2 Candidate -> ISC
+-  Python -> Coursera 
 
-STATUS: Ready for cybersecurity challenges
+STATUS: Excited for cybersecurity challenges...
 `}
             </Terminal>
             

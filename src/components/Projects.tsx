@@ -58,7 +58,7 @@ export default function Projects() {
           <div className="w-24 h-1 bg-gradient-to-r from-cyber-neon-blue to-cyber-neon-green mt-4 rounded-full" />
           
           <p className="text-gray-300 mt-4 max-w-2xl text-center">
-            Showcasing my security projects with a focus on vulnerability assessment, penetration testing, and secure system design.
+            Showcasing my security projects with a focus on vulnerability assessment and secure system design.
           </p>
         </div>
         

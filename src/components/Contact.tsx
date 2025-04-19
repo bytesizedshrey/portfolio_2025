@@ -180,28 +180,28 @@ export default function Contact() {
                   <ContactItem 
                     icon="mail"
                     title="Email"
-                    value="contact@cybersecportfolio.com"
+                    value="bytesizedshrey@gmail.com"
                     color="hsl(var(--neon-purple))"
                   />
                   
                   <ContactItem 
                     icon="terminal"
                     title="Discord"
-                    value="cybersec_pro"
+                    value="bytesizedshrey"
                     color="hsl(var(--neon-blue))"
                   />
                   
                   <ContactItem 
                     icon="code"
                     title="GitHub"
-                    value="github.com/cybersec-pro"
+                    value="github.com/bytesizedshrey"
                     color="hsl(var(--terminal-green))"
                   />
                   
                   <ContactItem 
                     icon="shield"
                     title="Location"
-                    value="Remote / Worldwide"
+                    value="Greater Noida"
                     color="hsl(var(--neon-purple))"
                   />
                 </div>
