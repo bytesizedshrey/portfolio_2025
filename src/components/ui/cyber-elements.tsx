@@ -29,7 +29,7 @@ interface CyberIconProps {
 export function CyberIcon({
   icon,
   className,
-  size = 24,
+  size = 0,
   glowing = false,
   color = "currentColor",
 }: CyberIconProps) {
@@ -88,7 +88,7 @@ export function IsometricIcon({
         height: `${size}px`,
       }}
     >
-      <div
+      {/* <div
         className={cn(
           "absolute inset-0 rounded-md bg-opacity-80 backdrop-blur-sm flex items-center justify-center",
           glowing && "animate-pulse-slow"
@@ -104,7 +104,7 @@ export function IsometricIcon({
           className="transform rotate-[45deg]"
           color={color}
         />
-      </div>
+      </div> */}
     </motion.div>
   );
 }
@@ -127,7 +127,7 @@ export function CyberGrid({
         className
       )}
       style={{
-        backgroundImage: 'linear-gradient(rgba(14, 165, 233, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(14, 165, 233, 0.1) 1px, transparent 1px)',
+        backgroundImage: 'linear-gradient(rgba(220, 220, 220, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(14, 165, 233, 0.1) 1px, transparent 1px)',
         backgroundSize: `${density}px ${density}px`,
         backgroundPosition: 'center center',
       }}
@@ -136,7 +136,7 @@ export function CyberGrid({
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-cyber-darker" />
       )}
       {animate && (
-        <div className="absolute inset-x-0 top-0 h-40 animate-scanner bg-gradient-to-b from-transparent to-cyber-neon-blue opacity-5" />
+        <div className="absolute inset-x-0 top-0 h-0 animate-scanner bg-gradient-to-b from-transparent to-cyber-neon-blue opacity-5" />
       )}
     </div>
   );
