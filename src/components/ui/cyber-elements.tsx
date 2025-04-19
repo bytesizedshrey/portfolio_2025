@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Shield, Lock, Terminal, Database, Server, FileCode, Key, Mail } from "lucide-react";
+import { Shield, Lock, Terminal, Database, Server, FileCode, Key, Mail, BookOpen } from "lucide-react";
 
 // Icon components that will be rendered in isometric style
 const CYBER_ICONS = {
@@ -14,6 +13,7 @@ const CYBER_ICONS = {
   code: FileCode,
   key: Key,
   mail: Mail,
+  book: BookOpen,
 };
 
 type CyberIconType = keyof typeof CYBER_ICONS;
