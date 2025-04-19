@@ -78,3 +78,4 @@ Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-trick
 # cipher-grid-folio
 # cipher-grid-folio
 # portfolio_2025
+# portfolio_2025
