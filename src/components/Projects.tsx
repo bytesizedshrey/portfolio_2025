@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { NeumorphicText, NeumorphicBox } from './ui/neumorphic';
@@ -16,53 +15,29 @@ interface Project {
 // Sample projects data
 const projectsData: Project[] = [
   {
-    id: 'sec-scanner',
-    title: 'Network Vulnerability Scanner',
-    description: 'An automated security tool that scans networks for potential vulnerabilities and generates comprehensive reports with remediation suggestions.',
-    tags: ['Python', 'Network Security', 'Automation'],
-    icon: 'shield',
-    color: 'hsl(var(--neon-purple))',
-  },
-  {
-    id: 'traffic-analyzer',
-    title: 'Encrypted Traffic Analyzer',
-    description: 'A tool for analyzing encrypted network traffic patterns to detect anomalies and potential security threats without decrypting the content.',
-    tags: ['Python', 'Machine Learning', 'Network Analysis'],
-    icon: 'server',
-    color: 'hsl(var(--neon-blue))',
-  },
-  {
-    id: 'auth-system',
-    title: 'Multi-Factor Authentication System',
-    description: 'A secure authentication system implementing various factors including biometrics, time-based tokens, and hardware keys.',
-    tags: ['Java', 'Security', 'Authentication'],
-    icon: 'key',
-    color: 'hsl(var(--terminal-green))',
-  },
-  {
-    id: 'pen-framework',
-    title: 'Penetration Testing Framework',
-    description: 'A modular framework for conducting structured penetration tests, with automated reconnaissance and reporting capabilities.',
-    tags: ['Python', 'Ethical Hacking', 'Penetration Testing'],
-    icon: 'lock',
-    color: 'hsl(var(--neon-purple))',
-  },
-  {
-    id: 'malware-analysis',
-    title: 'Malware Behavior Analysis Tool',
-    description: 'A sandbox environment for safely analyzing malware behavior and extracting signatures for detection systems.',
-    tags: ['C++', 'Malware Analysis', 'Reverse Engineering'],
+    id: 'legal-maxims',
+    title: 'Gamified Legal Maxims Learning Platform',
+    description: 'An AI-powered platform that transforms legal education through gamification, offering personalized quizzes, adaptive feedback, and engaging challenges for law students.',
+    tags: ['AI', 'Gamification', 'Education'],
     icon: 'code',
+    color: 'hsl(var(--neon-purple))',
+  },
+  {
+    id: 'owasp-scanner',
+    title: 'Mobile App Security Scanner',
+    description: 'A security scanning application that analyzes mobile apps for OWASP Mobile Top 10 vulnerabilities, providing detailed reports and remediation recommendations.',
+    tags: ['Security', 'Mobile', 'OWASP'],
+    icon: 'shield',
     color: 'hsl(var(--neon-blue))',
   },
   {
-    id: 'secure-chat',
-    title: 'End-to-End Encrypted Messenger',
-    description: 'A secure messaging application with end-to-end encryption, perfect forward secrecy, and zero-knowledge architecture.',
-    tags: ['Java', 'Cryptography', 'Messaging'],
-    icon: 'terminal',
+    id: 'steganography',
+    title: 'Steganography Application',
+    description: 'A secure data concealment tool that enables hiding and extracting encrypted messages within digital media files, ensuring confidential communication.',
+    tags: ['Cryptography', 'Security', 'Privacy'],
+    icon: 'lock',
     color: 'hsl(var(--terminal-green))',
-  },
+  }
 ];
 
 export default function Projects() {

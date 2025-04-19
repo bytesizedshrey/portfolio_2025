@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Terminal, CommandLine } from './ui/terminal';
@@ -15,68 +14,47 @@ interface Skill {
 
 const skills: Skill[] = [
   {
-    name: 'Penetration Testing',
-    level: 85,
-    category: 'offensive',
-    description: 'Identifying vulnerabilities through systematic testing and exploitation',
-    icon: 'terminal'
-  },
-  {
     name: 'Network Security',
-    level: 80,
-    category: 'defensive',
-    description: 'Securing network infrastructure against unauthorized access',
-    icon: 'server'
-  },
-  {
-    name: 'Vulnerability Assessment',
     level: 90,
-    category: 'analysis',
-    description: 'Finding, classifying, and prioritizing vulnerabilities in systems',
+    category: 'defensive',
+    description: 'Securing network infrastructure and protecting against cyber threats',
     icon: 'shield'
   },
   {
-    name: 'Python Programming',
-    level: 95,
-    category: 'development',
-    description: 'Building security tools, automating tasks, and data analysis',
-    icon: 'code'
-  },
-  {
-    name: 'C++ Programming',
+    name: 'Python',
     level: 85,
     category: 'development',
-    description: 'System-level programming for security applications',
+    description: 'Building security tools and automation scripts',
     icon: 'code'
   },
   {
-    name: 'Java Programming',
+    name: 'JavaScript',
     level: 80,
     category: 'development',
-    description: 'Application security and secure coding practices',
+    description: 'Web application security and development',
     icon: 'code'
   },
   {
     name: 'Cryptography',
-    level: 75,
+    level: 85,
     category: 'defensive',
-    description: 'Implementing and analyzing cryptographic systems',
+    description: 'Implementing secure encryption and data protection',
     icon: 'key'
   },
   {
-    name: 'Malware Analysis',
-    level: 70,
-    category: 'analysis',
-    description: 'Dissecting malicious software to understand its behavior',
-    icon: 'database'
+    name: 'ReactJS',
+    level: 80,
+    category: 'development',
+    description: 'Building secure and responsive web applications',
+    icon: 'code'
   },
   {
-    name: 'Digital Forensics',
-    level: 65,
-    category: 'analysis',
-    description: 'Collecting and analyzing digital evidence',
-    icon: 'lock'
-  },
+    name: 'Swift',
+    level: 75,
+    category: 'development',
+    description: 'iOS application security and development',
+    icon: 'code'
+  }
 ];
 
 export default function Skills() {
